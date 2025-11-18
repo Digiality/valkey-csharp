@@ -90,6 +90,7 @@ artifacts/
 .testcontainers/
 
 .sonarqube/
+.gitmodules/
 
 # Coverage reports
 coverage/
@@ -121,3 +122,4 @@ Desktop.ini
 
 # Claude Code private settings
 .claude/
+.gitmodules
