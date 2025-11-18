@@ -1,5 +1,11 @@
 # Valkey.NET
 
+[![CI](https://github.com/Digiality/valkey-csharp/actions/workflows/ci.yml/badge.svg)](https://github.com/Digiality/valkey-csharp/actions/workflows/ci.yml)
+[![NuGet](https://img.shields.io/nuget/v/Valkey.NET.svg)](https://www.nuget.org/packages/Valkey.NET/)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/Valkey.NET.svg)](https://www.nuget.org/packages/Valkey.NET/)
+[![codecov](https://codecov.io/gh/Digiality/valkey-csharp/branch/main/graph/badge.svg)](https://codecov.io/gh/Digiality/valkey-csharp)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
+
 A high-performance, modern Valkey client library for .NET 9+, built from the ground up with RESP3 protocol support and zero-allocation design patterns.
 
 **Status**: ✅ Production ready for single-node and cluster deployments
@@ -83,13 +89,22 @@ dotnet run --project samples/ScriptingDemo
 
 ## Installation
 
-**NuGet package coming soon**
+Install via NuGet Package Manager:
 
-For now, clone and build:
 ```bash
-git clone https://github.com/yourusername/valkey-csharp.git
-cd valkey-csharp
-dotnet build
+dotnet add package Valkey.NET
+```
+
+Or via Package Manager Console:
+
+```powershell
+Install-Package Valkey.NET
+```
+
+For dependency injection scenarios, you can also install the abstractions package:
+
+```bash
+dotnet add package Valkey.NET.Abstractions
 ```
 
 ## Building & Testing

@@ -6,6 +6,47 @@
     <Nullable>enable</Nullable>
     <IsPackable>true</IsPackable>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <!-- Version -->
+    <Version>0.6.0-alpha</Version>
+
+    <!-- Package Identity -->
+    <PackageId>Valkey.NET.Abstractions</PackageId>
+    <Authors>Chris White</Authors>
+    <Company>Digiality</Company>
+
+    <!-- Description -->
+    <Description>Abstractions and interfaces for Valkey.NET - High-performance .NET client for Valkey and Redis. This package contains only the interface definitions for dependency injection and testing scenarios.</Description>
+    <PackageDescription>$(Description)</PackageDescription>
+
+    <!-- Legal -->
+    <Copyright>Copyright (c) 2025 Digiality</Copyright>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+
+    <!-- URLs -->
+    <PackageProjectUrl>https://github.com/Digiality/valkey-csharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Digiality/valkey-csharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+
+    <!-- Assets -->
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
+    <!-- Tags -->
+    <PackageTags>valkey;redis;abstractions;interfaces;dependency-injection</PackageTags>
+
+    <!-- Source Link (for debugging) -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="All" />
+  </ItemGroup>
 
 </Project>
