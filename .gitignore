@@ -121,5 +121,6 @@ ehthumbs.db
 Desktop.ini
 
 # Claude Code private settings
-.claude/
+.claude/*
+!.claude/CLAUDE.md
 .gitmodules
