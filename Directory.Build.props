@@ -10,20 +10,20 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Authors>Valkey C# Contributors</Authors>
-    <Company>Valkey</Company>
+    <Authors>Chris White</Authors>
+    <Company>Digiality Ltd</Company>
     <Product>Valkey.NET</Product>
     <Copyright>Copyright © 2025</Copyright>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/valkey-io/valkey-csharp</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/valkey-io/valkey-csharp</RepositoryUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/valkey-csharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/valkey-csharp</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>valkey;redis;nosql;database;cache;distributed-cache;resp3</PackageTags>
     <Description>High-performance Valkey 9.0 client library for .NET 9</Description>
   </PropertyGroup>
 
   <PropertyGroup>
-    <VersionPrefix>0.1.0</VersionPrefix>
+    <VersionPrefix>0.6.0</VersionPrefix>
     <VersionSuffix>alpha</VersionSuffix>
   </PropertyGroup>
 

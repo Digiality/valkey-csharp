@@ -7,13 +7,51 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <IsPackable>true</IsPackable>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+    <!-- Version -->
+    <Version>0.6.0-alpha</Version>
+
+    <!-- Package Identity -->
+    <PackageId>Valkey.NET</PackageId>
+    <Authors>Chris White</Authors>
+    <Company>Digiality</Company>
+
+    <!-- Description -->
+    <Description>High-performance, modern .NET client for Valkey and Redis. Built on System.IO.Pipelines with RESP3 protocol support, cluster mode, pub/sub, transactions, streams, Lua scripting, and zero-allocation design patterns.</Description>
+    <PackageDescription>$(Description)</PackageDescription>
+
+    <!-- Legal -->
+    <Copyright>Copyright (c) 2025 Digiality</Copyright>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+
+    <!-- URLs -->
+    <PackageProjectUrl>https://github.com/Digiality/valkey-csharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Digiality/valkey-csharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+
+    <!-- Assets -->
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
+    <!-- Tags -->
+    <PackageTags>valkey;redis;resp3;high-performance;dotnet;async;pipelines;zero-allocation;cluster;pubsub;streams</PackageTags>
+
+    <!-- Source Link (for debugging) -->
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.IO.Pipelines" />
     <PackageReference Include="System.Threading.Channels" />
     <PackageReference Include="System.Diagnostics.DiagnosticSource" />
     <PackageReference Include="Polly.Core" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="All" />
   </ItemGroup>
 
   <ItemGroup>
