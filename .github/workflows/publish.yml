@@ -42,16 +42,34 @@ jobs:
 
       - name: Push to NuGet.org
         run: |
+          echo "Starting NuGet package push..."
+          echo "Package source: https://api.nuget.org/v3/index.json"
+          echo "Artifacts directory contents:"
+          ls -lh ./artifacts/
+          echo ""
+
           for package in ./artifacts/*.nupkg; do
             echo "===================="
             echo "Pushing: $package"
+            echo "Package size: $(du -h "$package" | cut -f1)"
+            echo "Package name: $(basename "$package")"
             echo "===================="
-            dotnet nuget push "$package" \
+
+            # Run push with detailed error output
+            if dotnet nuget push "$package" \
               --api-key ${{ secrets.NUGET_API_KEY }} \
               --source https://api.nuget.org/v3/index.json \
-              --verbosity detailed
+              --skip-duplicate; then
+              echo "✓ Successfully pushed: $(basename "$package")"
+            else
+              echo "✗ Failed to push: $(basename "$package")"
+              echo "Exit code: $?"
+              exit 1
+            fi
             echo ""
           done
+
+          echo "All packages pushed successfully!"
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
