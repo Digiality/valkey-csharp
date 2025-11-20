@@ -58,8 +58,7 @@ jobs:
             # Run push with detailed error output
             if dotnet nuget push "$package" \
               --api-key ${{ secrets.NUGET_API_KEY }} \
-              --source https://api.nuget.org/v3/index.json \
-              --skip-duplicate; then
+              --source https://api.nuget.org/v3/index.json; then
               echo "✓ Successfully pushed: $(basename "$package")"
             else
               echo "✗ Failed to push: $(basename "$package")"
