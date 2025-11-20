@@ -7,9 +7,6 @@
     <IsPackable>true</IsPackable>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
 
-    <!-- Version -->
-    <Version>0.6.0-alpha</Version>
-
     <!-- Package Identity -->
     <PackageId>Valkey.NET.Abstractions</PackageId>
     <Authors>Chris White</Authors>
