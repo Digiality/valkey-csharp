@@ -122,5 +122,5 @@ Desktop.ini
 
 # Claude Code private settings
 .claude/*
-!.claude/CLAUDE.md
+.claude
 .gitmodules
