@@ -23,7 +23,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <VersionPrefix>0.6.3</VersionPrefix>
+    <VersionPrefix>0.6.4</VersionPrefix>
     <VersionSuffix>alpha</VersionSuffix>
   </PropertyGroup>
 
