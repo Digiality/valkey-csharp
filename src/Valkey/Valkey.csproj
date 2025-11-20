@@ -9,7 +9,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
 
     <!-- Package Identity -->
-    <PackageId>Valkey.NET</PackageId>
+    <PackageId>Digiality.Valkey</PackageId>
     <Authors>Chris White</Authors>
     <Company>Digiality</Company>
 

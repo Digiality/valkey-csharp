@@ -8,7 +8,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
 
     <!-- Package Identity -->
-    <PackageId>Valkey.NET.Abstractions</PackageId>
+    <PackageId>Digiality.Valkey.Abstractions</PackageId>
     <Authors>Chris White</Authors>
     <Company>Digiality</Company>
 
